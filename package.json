@@ -1,0 +1,27 @@
+{
+  "name": "mailview",
+  "version": "0.0.0",
+  "description": "preview html and txt emails",
+  "main": "index.js",
+  "bin": {
+    "mailview": "./bin/mailview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shtylman/mailview.git"
+  },
+  "keywords": [
+    "html",
+    "email",
+    "templates",
+    "preview"
+  ],
+  "author": "Roman Shtylman <shtylman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shtylman/mailview/issues"
+  },
+  "dependencies": {
+    "express": "3.3.4"
+  }
+}
