@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 
+var querystring = require('querystring');
+var path = require('path');
+
+var express = require('express');
+
 var email_dir = process.argv[2];
 if (!email_dir) {
     console.error('usage: mailview /path/to/emails/dir');
     return process.exit(1);
 }
 
-var querystring = require('querystring');
-
-var express = require('express');
+email_dir = path.resolve(email_dir);
 
 // TODO support other mailers
 var mailer = require('../mailers/mandible');
